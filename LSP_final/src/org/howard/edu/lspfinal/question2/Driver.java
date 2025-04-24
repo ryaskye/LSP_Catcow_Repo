@@ -1,7 +1,7 @@
 package org.howard.edu.lspfinal.question2;
 
 /**
- * Driver class for testing the TaskManager system.
+ * Driver class from sample
  */
 public class Driver {
     public static void main(String[] args) {
@@ -32,7 +32,9 @@ public class Driver {
             System.out.println("Error: " + e.getMessage());
         }
 
-        // Print all tasks grouped by status
+        /**
+         * Print
+         */
         manager.printTasksGroupedByStatus();
     }
 }

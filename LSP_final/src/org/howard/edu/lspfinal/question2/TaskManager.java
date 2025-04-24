@@ -4,14 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Manages tasks, allowing adding tasks, retrieving tasks, updating their status, and printing them grouped by status.
+ * used chat gpt for starter code and advice from professor about using HashMap 
+ * Manages tasks, allowing adding tasks, retrieving tasks, updating their status, and printing them by status.
  */
 public class TaskManager {
     private Map<String, Task> tasks = new HashMap<>();
 
     /**
      * Adds a new task to the manager.
-     * Throws DuplicateTaskException if the task already exists.
+     * Throws DuplicateTaskException if already exists
      */
     public void addTask(String name, int priority, String status) throws DuplicateTaskException {
         if (tasks.containsKey(name)) {
@@ -21,8 +22,8 @@ public class TaskManager {
     }
 
     /**
-     * Retrieves a task by its name.
-     * Throws TaskNotFoundException if the task is not found.
+     * Retrieves a task by its name
+     * Throws TaskNotFoundException if task is not found.
      */
     public Task getTaskByName(String name) throws TaskNotFoundException {
         Task task = tasks.get(name);
@@ -33,8 +34,8 @@ public class TaskManager {
     }
 
     /**
-     * Updates the status of an existing task.
-     * Throws TaskNotFoundException if the task does not exist.
+     * Updates the status of an existing task
+     * Throws TaskNotFoundException if  task does not exist.
      */
     public void updateStatus(String name, String status) throws TaskNotFoundException {
         Task task = tasks.get(name);

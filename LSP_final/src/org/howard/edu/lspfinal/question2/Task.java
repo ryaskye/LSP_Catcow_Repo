@@ -1,6 +1,7 @@
 package org.howard.edu.lspfinal.question2;
 
 /**
+ * got help from chat gpt about getter and setters
  * Represents a Task in the TaskManager with a name, priority, and status.
  */
 public class Task {
@@ -8,14 +9,18 @@ public class Task {
     private int priority;
     private String status;
 
-    // Constructor
+    /**
+     * construct
+     */
     public Task(String name, int priority, String status) {
         this.name = name;
         this.priority = priority;
         this.status = status;
     }
 
-    // Getters and Setters
+    /**
+     * getters and setters
+     */
     public String getName() {
         return name;
     }
